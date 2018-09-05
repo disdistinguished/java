@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory >
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">123456</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sakila</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <mapping resource="movie/Actor.hbm.xml"/>
+  <mapping resource="movie/ActorInfo.hbm.xml"/>
+  <mapping resource="movie/Address.hbm.xml"/>
+  <mapping resource="movie/Category.hbm.xml"/>
+  <mapping resource="movie/City.hbm.xml"/>
+  <mapping resource="movie/Country.hbm.xml"/>
+  <mapping resource="movie/Customer.hbm.xml"/>
+  <mapping resource="movie/CustomerList.hbm.xml"/>
+  <mapping resource="movie/Film.hbm.xml"/>
+  <mapping resource="movie/FilmActor.hbm.xml"/>
+  <mapping resource="movie/FilmCategory.hbm.xml"/>
+  <mapping resource="movie/FilmList.hbm.xml"/>
+  <mapping resource="movie/FilmText.hbm.xml"/>
+  <mapping resource="movie/Inventory.hbm.xml"/>
+  <mapping resource="movie/Language.hbm.xml"/>
+  <mapping resource="movie/NicerButSlowerFilmList.hbm.xml"/>
+  <mapping resource="movie/Payment.hbm.xml"/>
+  <mapping resource="movie/Rental.hbm.xml"/>
+  <mapping resource="movie/SalesByFilmCategory.hbm.xml"/>
+  <mapping resource="movie/SalesByStore.hbm.xml"/>
+  <mapping resource="movie/Staff.hbm.xml"/>
+  <mapping resource="movie/StaffList.hbm.xml"/>
+  <mapping resource="movie/Store.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

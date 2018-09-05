@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 22:27:00 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="movie.SalesByFilmCategory" table="sales_by_film_category" catalog="sakila">
+        <composite-id name="id" class="movie.SalesByFilmCategoryId">
+            <key-property name="category" type="string">
+                <column name="category" length="25" />
+            </key-property>
+            <key-property name="totalSales" type="big_decimal">
+                <column name="total_sales" precision="27" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

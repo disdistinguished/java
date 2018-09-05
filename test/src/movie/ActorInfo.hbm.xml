@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-29 22:27:00 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="movie.ActorInfo" table="actor_info" catalog="sakila">
+        <composite-id name="id" class="movie.ActorInfoId">
+            <key-property name="actorId" type="short">
+                <column name="actor_id" />
+            </key-property>
+            <key-property name="firstName" type="string">
+                <column name="first_name" length="45" />
+            </key-property>
+            <key-property name="lastName" type="string">
+                <column name="last_name" length="45" />
+            </key-property>
+            <key-property name="filmInfo" type="string">
+                <column name="film_info" length="65535" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
